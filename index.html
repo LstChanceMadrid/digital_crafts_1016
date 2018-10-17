@@ -10,7 +10,7 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="main.css">
     </head>
 
     <body>
@@ -19,41 +19,47 @@
         </header>
 
         <main>
-            <fieldset>
-                <legend>Order Coffee</legend>
+            <fieldset class="order-coffee">
+                <legend class="order-legend">Order Coffee</legend>
 
-                <label for="email">Email: </label>
-                <input id="email-input" type="email" placeholder="madrid@coffee.com" required />
+                <label class="order-label" for="email">Email: </label>
 
-                <label for="coffee">Coffee: </label>
-                <select id="coffee-list">
-                    <option value="regular">Regular</option>
+                <input id="email-input" class="email-input" type="email" placeholder="madrid@coffee.com" required />
+
+                <label class="order-label" for="coffee">Coffee: </label>
+
+                <select id="coffee-list" class="coffee-list">
+                    <option class="coffee-option" value="regular">Regular</option>
                 
-                    <option value="black">Black</option>
+                    <option class="coffee-option" value="black">Black</option>
 
-                    <option value="iced">Iced</option>
+                    <option class="coffee-option" value="iced">Iced</option>
 
-                    <option value="orange mocha frappuccino">Orange Mocha Frappuccino</option>
+                    <option class="coffee-option" value="orange mocha frappuccino">Orange Mocha Frappuccino</option>
                 </select>
 
-                <input id="submit-button" type="submit" value="Create Order" />
+                <input id="submit-button" class="submit-button" type="submit" value="Create Order" />
             </fieldset>
 
-            <section>
-                <fieldset>
-                <legend>Order Information</legend>
+            <section class="all-orders-container">
+                <fieldset class="personal-order">
+                    <legend class="order-legend">Order Information</legend>
 
-                <input id="order-email" type="email" placeholder="Enter Order Email" />
-                <input id="order-info-button" type="button" value="Get Order" />
+                    <input id="order-email" class="email-input" type="email" placeholder="Enter Order Email" />
 
-                <section id="order-information-container">
-                </section>
+                    <input id="order-info-button" class="order-info-button" type="button" value="Get Order" />
+
+                    <section id="order-information-container">
+                        <!-- information for personal order -->
+                    </section>
                 </fieldset>
 
-                <fieldset>
-                <legend>All Orders</legend>
-                <div id="all-orders">
-                </div>
+                <fieldset class="pending-orders">
+                    <legend class="order-legend">All Orders</legend>
+                    
+                    <div id="pending-orders" class="pending-orders-container">
+                        <!-- Where the entire list of orders will be -->
+                    </div>
                 </fieldset>
             </section>
         </main>

@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+span {
+    font-weight: bold;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+}
+
+    .order-coffee {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+        .order-legend {
+            font-weight: bold;
+        }
+
+        .order-label {
+            font-size: 1.25em;
+        }
+
+        .email-input {
+            padding: 0.5em;
+        }
+
+        .coffee-list {
+            padding: 0.5em;
+        }
+
+            .coffee-option {}
+
+        .submit-button {
+            position: relative;
+            margin: 0.5em;
+            padding: 0.5em;
+        }
+
+    .all-orders {}
+
+        .personal-order {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+            .order-info-button {}
+
+        .pending-orders {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+            .pending-orders-container {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 1em;
+                justify-content: space-evenly;
+            }
+
+                .pending-order {
+                    display: flex;
+                    flex-wrap: wrap;
+                    border: 1px solid lightgray;
+                    width: 400px;
+                    margin-top: 1em auto 0 auto;
+                    overflow-wrap: break-word;
+                }
+
+                    .pending-orders-email {
+                        flex-wrap: wrap;
+                        width:100%;
+                        padding: 1em 1em 0 1em;
+                    }
+
+                    .pending-orders-coffee {
+                        width: 100%;
+                        padding: 1em;
+                    }
+
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer {}
+
+@media screen and (max-width: 780px) {
+
+    body {
+        padding: 0;
+    }
+
+    .pending-order {
+        width: 350px;
+    }
+
+    .pending-orders-container {
+        padding: 0;
+    }
+
+    .order-coffee {
+        width: 100%;
+    }
+}
